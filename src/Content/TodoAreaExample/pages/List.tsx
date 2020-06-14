@@ -12,13 +12,13 @@ const List = () => {
     // dispatch(areaActions[FIND_TODOS_STARTED]());
   }, [dispatch]);
   return (
-    <div>
+    <>
       <Helmet>
         <title>My TodoList</title>
         <meta name="description" content="Helmet application" />
       </Helmet>
       <FormItemUseState />
-    </div>
+    </>
   );
 };
 
