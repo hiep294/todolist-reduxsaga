@@ -1,12 +1,12 @@
 import React from 'react';
 import { Switch, useRouteMatch, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import List from './pages/List';
 
 export default () => {
   const match = useRouteMatch();
   return (
     <Switch>
-      <Route path={`${match.url}`} component={Home} />
+      <Route path={`${match.url}`} component={List} />
     </Switch>
   );
 };

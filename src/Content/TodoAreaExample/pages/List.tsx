@@ -3,8 +3,9 @@ import { useDispatch } from 'react-redux';
 // import areaActions from '../state-management/actions';
 // import { FIND_TODOS_STARTED } from '../state-management/constants';
 import FormItemUseState from '../components/FormItemUseState';
+import { Helmet } from 'react-helmet';
 
-const Home = () => {
+const List = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -12,9 +13,13 @@ const Home = () => {
   }, [dispatch]);
   return (
     <div>
+      <Helmet>
+        <title>My TodoList</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <FormItemUseState />
     </div>
   );
 };
 
-export default Home;
+export default List;
